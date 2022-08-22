@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="apparel.css">
+  <script src="https://kit.fontawesome.com/7cf0963032.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <p>Laura Alinda</p>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#pink">TECHSTACK</a></li>
+                <li><a href="https://www.behance.net/gallery/149957199/E-commerce-Website">DESIGN</a></li>
+                <li><a href="https://amazing-druid-a5e974.netlify.app/">WEBSITE</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+</section>
+
+<div class="project">
+  <div class="heading">
+    <h1>APPAREL<br><span>PLACE</span></h1>
+    <p>A true style indulgence</p>
+  </div>
+  <div class="fem">
+    <img src="images/_I_love_shopping__There_is_a_little_bit_of_magic_-removebg-preview.png"id="woman">
+  </div>
+</div>
+
+
+
+<div class="pink" id="pink">
+    <h1>Tech stack</h1>
+    <p>This is an e-commerce platform with its front-end<br> powered by Html and Css and running on Django<br> as a framework while utilising postgres database in the back-end</p>
+ 
+  <div class="buttons">
+    <button id="btn"><a href="https://www.behance.net/gallery/149957199/E-commerce-Website">View Design</a></button>
+    <button id="btn"><a href="https://amazing-druid-a5e974.netlify.app/">View Website</a></button>
+  </div>
+
+
+</div>
+ 
+
+
+<!-- ...java script for toggle.. -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
